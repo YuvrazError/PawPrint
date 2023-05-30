@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pet Management Store - Cart</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <body>
+        <header>
+            Pet Management Store
+        </header>
+        <nav>
+            <ul>
+                <a href="index.html">Home</a>
+                <a href="Products.html">Featured Products</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="cart-items.html">Cart</a>
+                <a href="login.html">Logout</a>
+              </ul>
+    
+        </nav>
+<!-- <h1>Cart</h1>
+    <div id="cart-items"></div>
+    <button onclick="window.location.href='cart-items.html'">Show Cart</button>
+
+    <script>
+      // Fetch cart items from local storage
+      var cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+      // Display cart items
+      var cartItemsContainer = document.getElementById('cart-items');
+      if (cartItems.length > 0) {
+        cartItemsContainer.innerHTML = '';
+        for (var i = 0; i < cartItems.length; i++) {
+          var item = cartItems[i];
+          cartItemsContainer.innerHTML += '<div>' + item.name + ' - ' + item.price + '</div>';
+        }
+      } else {
+        cartItemsContainer.innerHTML = 'Your cart is empty.';
+      }
+    </script> -->
+    <body>
+        <div class="cart-details">
+          <h1>Cart Items</h1>
+          <table border="1">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>($) Price</th>
+                <th>Quantity</th>
+              </tr>
+            </thead>
+            <tbody id="cart-items">
+          
+            </tbody>
+          </table>
+          <div class="checkout-button-section">
+            <a href="checkout.html" class="checkout-btn">Checkout</a>
+          </div>
+        </div>
+    
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            // const productName = urlParams.get('name');
+            // const productPrice = urlParams.get('price');
+    
+
+            // const cartItems = document.getElementById('cart-items');
+            // const newRow = cartItems.insertRow(-1);
+            // const nameCell = newRow.insertCell(0);
+            // const priceCell = newRow.insertCell(1);
+            // nameCell.innerHTML = productName;
+            // priceCell.innerHTML = '$' + productPrice;
+        </script>
+
+        <script src="./scripts/cart.js"></script>
+</body>
+</html>

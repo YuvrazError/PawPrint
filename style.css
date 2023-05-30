@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans';
+    background-color: #a4e2f9;
+}
+
+header {
+    background-color: #4f8eb5;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+nav {
+    background-color: #0B4E93;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    border: 0px solid #fffefe;
+    border-radius: 5px;
+    background-color: #4f8eb5;
+
+
+}
+
+nav a:hover {
+    background-color: #77bddf;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section div {
+    background-color: #77bddf;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0px 0px 10px #ccc;
+    text-align: center;
+}
+
+section img {
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+    max-width: 100%;
+    height: 300px;
+    width: 300px;
+}
+
+section h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    text-decoration-color: brown;
+}
+
+section p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+footer {
+    background-color: #0B4E93;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+/* =========== modified =========== */
+.cart-details h1 {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+table :is(th, td) {
+    padding: 7px 8px;
+}
+
+.cart-details a {
+    margin: auto;
+}
+
+.checkout-button-section {
+    padding: 20px;
+    text-align: center;
+}
